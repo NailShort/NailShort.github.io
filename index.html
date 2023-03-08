@@ -7,62 +7,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/bootstrap.css">
   <link rel="stylesheet" href="./css/style.css">
-  <title>ZhangWen-Portfolio</title>
+  <title>ZHANG WEN-Portfolio</title>
 
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand logo" href="#">
+        <img src="./images/LOGO.png" alt="">
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <!-- menu -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="#Hellow">Hellow</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
+            <a class="nav-link" href="#About">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
+            <a class="nav-link" href="#Skill">Skill</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Contact">Contact</a>
           </li>
         </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
       </div>
+
     </div>
   </nav>
-  <section id="section01">
-    <div class="main-text">
-      <h1 class="text-center">更大總結貸款如果習。</h1>
-      <p>
-        相對外掛標題精靈都能校長失望不同導致當前版面，到了當我聯繫方式種子他是設定不能下載沒事廠家女友你說溫暖，制定發佈時間突然無門諾基亞，分析新竹解決方案，傳統整合明星節目正是其它遵守判斷，日常第二章陽光第一章畢竟製造對於面議隱藏版事項，想像今日，也可科技有限。
-      </p>
+  <section id="Hellow">
+    <div class="text">
+      <h1></h1>
     </div>
   </section>
-  <section id="section02"></section>
-  <section id="section03"></section>
-  <section id="section04"></section>
+  <section id="About"></section>
+  <section id="Skill"></section>
+  <section id="Portfolio"></section>
+  <section id="Contact"></section>
+
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.js'></script>
   <script src="./js/bootstrap.bundle.min.js"></script>
@@ -70,27 +61,7 @@
   <script src="./gsap/gsap.js"></script>
   <!-- gsap plugins，必須在 gsap 主程式之後 -->
   <script src="./gsap/ScrollTrigger.js"></script>
-
-  <script>
-    // 註冊套件
-    gsap.registerPlugin(ScrollTrigger)
-    gsap.from('.navbar', {
-      yPercent: -100,
-      duration: 0.2,
-      scrollTrigger: {
-        // 沒有 trigger 觸發目標，整份文件都是捲動監控
-        start: `top ${$('.navbar').height()}`,
-        end: () => '+=' + document.documentElement.scrollHeight,
-        onEnter(self) {
-          self.animation.play()
-        },
-        onUpdate(self) {
-          self.direction === -1 ? self.animation.play() : self.animation.reverse()
-        },
-        markers: true
-      }
-    })
-  </script>
+  <script src="./js/gsap.js"></script>
 </body>
 
 </html>

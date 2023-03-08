@@ -1,0 +1,63 @@
+body {
+  height: 100vh;
+}
+
+section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  opacity: 1;
+  height: 50px;
+  .logo{
+    padding: 0;
+    height: 30px;
+    color: red;
+    img{
+      height: 30px;
+    }
+  }
+  .collapse{
+    ul{
+      margin: auto;
+      padding: 0;
+      li{
+        padding: 5px 10px;
+        a{
+          color: rgb(15,140,160);
+          font-weight: 900;
+          &:hover{
+            color: rgb(15,15,100);
+          }
+        }
+        
+      }
+    }
+  }
+}
+
+#Hellow{
+  height: 100vh;
+  background: linear-gradient(90deg,white 70%,rgb(15,140,160) 30%);
+  color: rgb(15,140,160);
+
+}
+#About{
+  height: 50vh;
+  background: lightcyan;
+}
+#Skill{
+  height: 50vh;
+  background: lightsteelblue;
+}
+#Portfolio{
+  height: 50vh;
+  background: lightgreen;
+}
+#Contact{
+  height: 50vh;
+  background: lightgoldenrodyellow;
+}
