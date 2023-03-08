@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/bootstrap.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
   <title>ZHANG WEN-Portfolio</title>
 
 </head>
@@ -25,31 +28,54 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#Hellow">Hellow</a>
+            <a class="nav-link active" aria-current="page" href="#Hellow" data-storke="Hellow">Hellow</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#About">About</a>
+            <a class="nav-link" href="#About" data-storke="About">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#Skill">Skill</a>
+            <a class="nav-link" href="#Skill" data-storke="Skill">Skill</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#Portfolio">Portfolio</a>
+            <a class="nav-link" href="#Portfolio" data-storke="Portfolio">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#Contact">Contact</a>
+            <a class="nav-link" href="#Contact" data-storke="Contact">Contact</a>
           </li>
         </ul>
       </div>
 
     </div>
   </nav>
-  <section id="Hellow">
+  <!-- 首頁 -->
+  <section id="Hellow" class="d-flex justify-content-center align-items-center">
     <div class="text">
-      <h1></h1>
+      <p class="hi">Hi！There.</p>
+      <h1 class="name">ZHANH-WEN</h1>
+      <p class="web">FRONT-END WEB DEVELOPER</p>
+      <a class="btn" href="#Portfolio">
+        – &nbsp; My Portfolio &nbsp; –
+      </a>
+    </div>
+    <div class="mascot">
+      <img class="body" src="./images/mascot.gif" alt="">
+      <img class="face" src="./images/mascot-face.gif" alt="">
+    </div>
+    <div class="wave"></div>
+  </section>
+  <!-- 關於 -->
+  <section id="About">
+    <div class="container">
+      <div class="title col-12 text-center" data-storke="About Me">About Me</div>
+      <div class="row m-auto">
+        <div class="img col-lg-6 d-flex align-items-stretch justify-content-center justify-content-lg-start"></div>
+        <div class="row col-12 col-md-6 text-center p-0">
+          <div class="col-12">123</div>
+          <div class="col-12">123</div>
+        </div>
+      </div>
     </div>
   </section>
-  <section id="About"></section>
   <section id="Skill"></section>
   <section id="Portfolio"></section>
   <section id="Contact"></section>
