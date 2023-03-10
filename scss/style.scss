@@ -257,19 +257,39 @@ section{
 // 作品----------------------------------------------------------------
 #Portfolio{
   text-align: center;
+  h1{
+    margin-bottom: 30px;
+    position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 3px;
+      background: rgb(170,140,120);
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  .row{
+    background: #eee;
+    padding: 20px 0;
+  }
   .text{
     text-align: left;
     margin:auto;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+
   }
   .gif{
     padding:0;
-    .swiper-wrapper{
-      img{
-        max-width: 100%;
-        height: auto;
-      }
+    .swiper-slide{
+        img{
+          width: 100%;
+          height: auto;
+        }
     }
+
   }
 }
 // 聯繫----------------------------------------------------------------

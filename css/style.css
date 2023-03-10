@@ -252,16 +252,35 @@ section {
 #Portfolio {
   text-align: center;
 }
+#Portfolio h1 {
+  margin-bottom: 30px;
+  position: relative;
+}
+#Portfolio h1::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: rgb(170, 140, 120);
+  bottom: -10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+#Portfolio .row {
+  background: #eee;
+  padding: 20px 0;
+}
 #Portfolio .text {
   text-align: left;
   margin: auto;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 #Portfolio .gif {
   padding: 0;
 }
-#Portfolio .gif .swiper-wrapper img {
-  max-width: 100%;
+#Portfolio .gif .swiper-slide img {
+  width: 100%;
   height: auto;
 }
 
