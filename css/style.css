@@ -180,14 +180,77 @@ section {
 }
 
 #Skill {
-  height: 60vh;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgb(225, 220, 205)), color-stop(50%, white));
-  background: linear-gradient(rgb(225, 220, 205) 50%, white 50%);
+  background: white;
+}
+#Skill .card {
+  padding: 0 20px;
+  background: 0;
+  border: none;
+  min-height: 400px;
+  margin-bottom: 30px;
+}
+#Skill .card .card-body {
+  padding: 10px 30px 30px 30px;
+  border-radius: 5px;
+  background: white;
+  -webkit-box-shadow: 0 5px 5px rgba(170, 140, 120, 0.5);
+          box-shadow: 0 5px 5px rgba(170, 140, 120, 0.5);
+}
+#Skill .card .card-body:hover {
+  background: rgb(170, 140, 120);
+  color: white;
+}
+#Skill .card .card-body:hover i {
+  color: white;
+}
+#Skill .card .card-body:hover h1 {
+  color: white;
+  border-left: 3px solid white;
+}
+#Skill .card .card-body:hover h2 {
+  color: white;
+}
+#Skill .card .card-body i {
+  margin-bottom: 10px;
+  margin-left: 20px;
+  font-size: 50px;
+  color: rgb(170, 140, 120);
+  display: block;
+}
+#Skill .card .card-body h1 {
+  color: rgb(170, 140, 120);
+  font-size: 30px;
+  display: inline-block;
+  border-left: 3px solid rgb(170, 140, 120);
+  padding-left: 10px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
+}
+#Skill .card .card-body h2 {
+  font-size: 15px;
+  color: rgb(170, 140, 120);
+}
+#Skill .card .card-body ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#Skill .card .card-body ul li {
+  line-height: 40px;
+}
+#Skill .card .card-body ul li .svg {
+  display: inline-block;
+  width: 30px;
+}
+#Skill .card .card-body ul li span {
+  color: white;
+  font-size: 15px;
+  padding: 5px;
+  background: lightseagreen;
 }
 
 #Portfolio {
   height: 50vh;
-  background: lightgreen;
 }
 
 #Contact {
@@ -215,5 +278,10 @@ section {
   }
   #About .row .text {
     padding: 0 30px;
+  }
+  #Skill {
+    height: 80vh;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgb(225, 220, 205)), color-stop(50%, white));
+    background: linear-gradient(rgb(225, 220, 205) 50%, white 50%);
   }
 }
