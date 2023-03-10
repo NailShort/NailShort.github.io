@@ -5,10 +5,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./images/LOGO-link.png" type="image/x-icon">
   <link rel="stylesheet" href="./css/bootstrap.css">
   <link rel="stylesheet" href="./css/style.css">
+  <!-- google font -->
   <link
     href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet">
   <title>ZHANG WEN-Portfolio</title>
 
@@ -63,20 +67,117 @@
     </div>
     <div class="wave"></div>
   </section>
-  <!-- 關於 -->
+  <!-- 關於 ------------------------------------------------------------->
   <section id="About">
-    <div class="container">
-      <div class="title col-12 text-center" data-storke="About Me">About Me</div>
+    <div class="container p-0">
       <div class="row m-auto">
+        <!-- 照片 -->
         <div class="img col-lg-6 d-flex align-items-stretch justify-content-center justify-content-lg-start"></div>
-        <div class="row col-12 col-md-6 text-center p-0">
-          <div class="col-12">123</div>
-          <div class="col-12">123</div>
+        <!-- 文字區 -->
+        <div class="text row col-12 col-lg-6">
+          <div class="col-12">
+            <h1>About Me </h1>
+            <p>
+              您好，我是王政文，從高中開始學習設計，
+              出社會後從事廣告設計公司，因緣際會下接觸到網頁美術設計，
+              發現除了美化網頁也要顧及 UI、UX，讓使用者方便操作，
+              進而對網頁設計有濃厚的興趣，報名半年的專業訓練進一步學習開發技術。
+            </p>
+            <p>
+              在課程中，熟悉了 HTML、CSS 能獨立建置 RWD 網頁，加入 JavaScript 網頁互動功能，
+              經由 LineBot 串接 API 資料，以及使用前端框架 Vue.js 及
+              Quasar UI 與後端 Node.js、MongoDB 資料庫，獨力建置一份具有前後台功能的網頁。
+            </p>
+            <p>
+              未來規劃是繼續精進前端相關技能，並同時學習後端的相關知識，
+              因為這樣有助於我跟後端工程師溝通，那我期許自己可以成為全端工程師。
+            </p>
+          </div>
+          <div class="col-12">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              查看履歷
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">我的履歷</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container">
+                      <div class="row m-auto">
+
+                        <div class="col-12 col-xl-5 row box">
+                          <div class=" col-12">
+                            <h1>★ 職業訓練</h1>
+                            <div class="line">
+                              <h2>前端網頁開發技術</h2>
+                              <span class="time">2022年9月 ~ 2023年3月</span>
+                              <h3>泰山職業訓練場</h3>
+                              <p>
+                                為了實現當工程師的夢想，參加職訓課程入門相關的技能及知識，課程中學習到 JavaScript、jQuery
+                                、Node.js、Vue、MongoDB、以及網頁設計等技術與工具，並且考取了網頁設計丙級證照。
+                              </p>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <h1>★ 學業經歷</h1>
+                            <div class="line">
+                              <h2>視覺設計系學士</h2>
+                              <span class="time">2015年9月 ~ 2018年6月</span>
+                              <h3>南台科技大學</h3>
+                              <p>
+                                為了實現當工程師的夢想，參加職訓課程入門相關的技能及知識，課程中學習到 JavaScript、jQuery
+                                、Node.js、Vue、MongoDB、以及網頁設計等技術與工具，並且考取了網頁設計丙級證照。
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="box col-12 col-xl-5 row box">
+                          <div class="col-12">
+                            <h1>★ 工作經歷</h1>
+                            <div class="line">
+                              <h2>平面設計師</h2>
+                              <span class="time">2020年3月 ~ 2021年7月</span>
+                              <h3>得勝廣告</h3>
+                              <p>
+                                為了實現當工程師的夢想，參加職訓課程入門相關的技能及知識，課程中學習到 JavaScript、jQuery
+                                、Node.js、Vue、MongoDB、以及網頁設計等技術與工具，並且考取了網頁設計丙級證照。
+                              </p>
+                            </div>
+                            <div class="line">
+                              <h2>美編設計專員</h2>
+                              <span class="time">2019年5月 ~ 2020年7月</span>
+                              <h3>隆旺開發</h3>
+                              <p>
+                                為了實現當工程師的夢想，參加職訓課程入門相關的技能及知識，課程中學習到 JavaScript、jQuery
+                                、Node.js、Vue、MongoDB、以及網頁設計等技術與工具，並且考取了網頁設計丙級證照。
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+  </section>
+  <!-- 技能 ---------------------------------------------------------------->
+  <section id="Skill">
+    <div class="container">
+
     </div>
   </section>
-  <section id="Skill"></section>
   <section id="Portfolio"></section>
   <section id="Contact"></section>
 

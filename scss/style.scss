@@ -10,6 +10,7 @@ section{
 .navbar {
   opacity: 1;
   height: 50px;
+  background: linear-gradient(white,rgba(255,255,255,0) 90%);
   .logo{
     padding: 0;
     height: 30px;
@@ -88,6 +89,7 @@ section{
     }
   }
   .wave{
+    display: none;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -100,32 +102,92 @@ section{
 #About{
   width: 100%;
   background: rgb(225,220,205);
-  .title{
-    position: relative;
-    font-size: 35px;
-    font-weight: 500;
-    margin-bottom: 50px;
-    &::before{
-      content: attr(data-storke);
-      position: absolute;
-      top: -20px;
-      left: 50%;
-      transform: translateX(-50%);
-      font-size: 40px;
-      color: rgba(0,0,0,0.1);
-    }
-  }
   .row{
     .img{
       background: url(../images/face.jpg) no-repeat center center;
       min-height: 500px;
     }
+    .text{
+      padding: 30px 0px;
+      margin: auto;
+      font-family: 'Noto Sans TC', sans-serif;
+      color: rgb(170,140,120);
+      line-height: 2rem;
+      h1{
+        color: black;
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgb(170,140,120);
+      }
+      p{
+        text-indent: 2rem;
+      }
+    }
+    .btn{
+      background: rgb(170,140,120);
+      color: white;
+      font-weight: 500;
+      padding-left: 15px;
+      letter-spacing: 5px;
+    }
+    .modal-body{
+      .box{
+        margin-left: 20px;
+        margin-bottom: 30px;
+        padding: 0 30px 0 10px;
+        .line{
+          padding-left: 20px;
+          border-left: 1px solid rgb(170,140,120);
+          position: relative;
+          &::before{
+            content: "";
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: rgb(170,140,120);
+            position: absolute;
+            left: -7.5px;
+          }
+        }
+      }
+      h1{
+        font-size: 22px;
+        border-bottom: 0;
+        display: inline-block;
+        border-bottom: 3px solid goldenrod;
+        margin-bottom: 20px;
+        color: goldenrod;
+      }
+      h2{
+        font-size: 25px;
+      }
+      h3{
+        font-size: 16px;
+        font-style: italic;
+        color: black;
+      }
+      .time{
+        font-size: 12px;
+        background: rgb(170,140,120);
+        color: white;
+        padding: 0px 20px;
+        border-radius: 50px;
+        display: inline-block;
+        margin-bottom: 10px;
+      }
+      p{
+        text-indent: 0;
+        color: gray;
+        margin: 0;
+        padding-bottom: 30px;
+      }
+    }
   }
 }
 // 技能----------------------------------------------------------------
 #Skill{
-  height: 50vh;
-  background: lightsteelblue;
+  height: 60vh;
+  background: linear-gradient(rgb(225,220,205) 50%,white 50%);
+
 }
 // 作品----------------------------------------------------------------
 #Portfolio{
@@ -137,7 +199,15 @@ section{
   height: 50vh;
   background: lightgoldenrodyellow;
 }
-
+@media (min-width: 768px) {
+  #About{
+    .row{
+      .text{
+        padding: 50px;
+      }
+    }
+  }
+}
 
 @media (min-width: 992px) {
   #Hellow{
@@ -150,6 +220,16 @@ section{
       }
       .web{
         font-size: 25px;
+      }
+    }
+    .wave{
+      display: block;
+    }
+  }
+  #About{
+    .row{
+      .text{
+        padding: 0 30px;
       }
     }
   }

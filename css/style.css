@@ -10,6 +10,8 @@ section {
 .navbar {
   opacity: 1;
   height: 50px;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(90%, rgba(255, 255, 255, 0)));
+  background: linear-gradient(white, rgba(255, 255, 255, 0) 90%);
 }
 .navbar .logo {
   padding: 0;
@@ -88,6 +90,7 @@ section {
           transform: translateX(-50%);
 }
 #Hellow .wave {
+  display: none;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -99,30 +102,87 @@ section {
   width: 100%;
   background: rgb(225, 220, 205);
 }
-#About .title {
-  position: relative;
-  font-size: 35px;
-  font-weight: 500;
-  margin-bottom: 50px;
-}
-#About .title::before {
-  content: attr(data-storke);
-  position: absolute;
-  top: -20px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  font-size: 40px;
-  color: rgba(0, 0, 0, 0.1);
-}
 #About .row .img {
   background: url(../images/face.jpg) no-repeat center center;
   min-height: 500px;
 }
+#About .row .text {
+  padding: 30px 0px;
+  margin: auto;
+  font-family: "Noto Sans TC", sans-serif;
+  color: rgb(170, 140, 120);
+  line-height: 2rem;
+}
+#About .row .text h1 {
+  color: black;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(170, 140, 120);
+}
+#About .row .text p {
+  text-indent: 2rem;
+}
+#About .row .btn {
+  background: rgb(170, 140, 120);
+  color: white;
+  font-weight: 500;
+  padding-left: 15px;
+  letter-spacing: 5px;
+}
+#About .row .modal-body .box {
+  margin-left: 20px;
+  margin-bottom: 30px;
+  padding: 0 30px 0 10px;
+}
+#About .row .modal-body .box .line {
+  padding-left: 20px;
+  border-left: 1px solid rgb(170, 140, 120);
+  position: relative;
+}
+#About .row .modal-body .box .line::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: rgb(170, 140, 120);
+  position: absolute;
+  left: -7.5px;
+}
+#About .row .modal-body h1 {
+  font-size: 22px;
+  border-bottom: 0;
+  display: inline-block;
+  border-bottom: 3px solid goldenrod;
+  margin-bottom: 20px;
+  color: goldenrod;
+}
+#About .row .modal-body h2 {
+  font-size: 25px;
+}
+#About .row .modal-body h3 {
+  font-size: 16px;
+  font-style: italic;
+  color: black;
+}
+#About .row .modal-body .time {
+  font-size: 12px;
+  background: rgb(170, 140, 120);
+  color: white;
+  padding: 0px 20px;
+  border-radius: 50px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+#About .row .modal-body p {
+  text-indent: 0;
+  color: gray;
+  margin: 0;
+  padding-bottom: 30px;
+}
 
 #Skill {
-  height: 50vh;
-  background: lightsteelblue;
+  height: 60vh;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgb(225, 220, 205)), color-stop(50%, white));
+  background: linear-gradient(rgb(225, 220, 205) 50%, white 50%);
 }
 
 #Portfolio {
@@ -135,6 +195,11 @@ section {
   background: lightgoldenrodyellow;
 }
 
+@media (min-width: 768px) {
+  #About .row .text {
+    padding: 50px;
+  }
+}
 @media (min-width: 992px) {
   #Hellow .text .hi {
     font-size: 40px;
@@ -144,5 +209,11 @@ section {
   }
   #Hellow .text .web {
     font-size: 25px;
+  }
+  #Hellow .wave {
+    display: block;
+  }
+  #About .row .text {
+    padding: 0 30px;
   }
 }
