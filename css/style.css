@@ -250,7 +250,19 @@ section {
 }
 
 #Portfolio {
-  height: 50vh;
+  text-align: center;
+}
+#Portfolio .text {
+  text-align: left;
+  margin: auto;
+  margin-bottom: 20px;
+}
+#Portfolio .gif {
+  padding: 0;
+}
+#Portfolio .gif .swiper-wrapper img {
+  max-width: 100%;
+  height: auto;
 }
 
 #Contact {

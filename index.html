@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./css/bootstrap.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./icons/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <!-- google font -->
   <link
     href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
@@ -637,7 +638,32 @@
     </div>
   </section>
   <section id="Portfolio">
-    .containe
+    <div class="container">
+      <div class="row">
+        <div class="text col-12">
+          <h1>Portfolio</h1>
+          <h2>專題 | Ocean</h2>
+        </div>
+        <div class="gif col-12 flex">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/專題-首頁.gif" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/專題-首頁使用.gif" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/專題-登入.gif" alt="">
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </section>
   <section id="Contact"></section>
 
@@ -649,6 +675,17 @@
   <!-- gsap plugins，必須在 gsap 主程式之後 -->
   <script src="./gsap/ScrollTrigger.js"></script>
   <script src="./js/gsap.js"></script>
+  <!-- swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      rewind: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </body>
 
 </html>

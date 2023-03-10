@@ -256,7 +256,21 @@ section{
 }
 // 作品----------------------------------------------------------------
 #Portfolio{
-  height: 50vh;
+  text-align: center;
+  .text{
+    text-align: left;
+    margin:auto;
+    margin-bottom: 20px;
+  }
+  .gif{
+    padding:0;
+    .swiper-wrapper{
+      img{
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
 }
 // 聯繫----------------------------------------------------------------
 #Contact{
