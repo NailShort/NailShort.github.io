@@ -112,7 +112,7 @@ section{
       padding: 30px 0px;
       margin: auto;
       font-family: 'Noto Sans TC', sans-serif;
-      color: rgb(170,140,120);
+      // color: rgb(170,140,120);
       line-height: 2rem;
       h1{
         color: black;
@@ -272,10 +272,10 @@ section{
     }
   }
   .row{
-    background: #eee;
-    padding: 20px 0;
+    background: rgba(170,140,120,0.1);
+    padding: 20px;
   }
-  .text{
+  .ocean{
     text-align: left;
     margin:auto;
     margin-bottom: 10px;
@@ -289,7 +289,10 @@ section{
           height: auto;
         }
     }
-
+  }
+  .text{
+    text-align: left;
+    padding: 0 30px;
   }
 }
 // 聯繫----------------------------------------------------------------
