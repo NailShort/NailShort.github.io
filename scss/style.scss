@@ -271,29 +271,49 @@ section{
       transform: translateX(-50%);
     }
   }
-  .row{
+  .por-bg{
     background: rgba(170,140,120,0.1);
     padding: 20px;
-  }
-  .ocean{
-    text-align: left;
-    margin:auto;
-    margin-bottom: 10px;
-
-  }
-  .gif{
-    padding:0;
-    .swiper-slide{
+    margin: auto;
+    .ocean{
+      text-align: left;
+      margin:auto;
+      margin-bottom: 10px;
+    }
+    .por{
+      margin-bottom: 50px;
+      margin: auto;
+    }
+    .gif{
+      padding:0;
+      .swiper-slide{
+          img{
+            width: 100%;
+            height: auto;
+          }
+      }
+    }
+    .text{
+      text-align: left;
+      padding: 0 30px;
+    }
+    .cards{
+      margin: auto;
+      .card{
+        margin-bottom: 20px;
+        border: none;
         img{
-          width: 100%;
-          height: auto;
+          object-fit: cover;
+          &:hover{
+            transform: scale(1.1);
+          }
         }
+      }
+
     }
   }
-  .text{
-    text-align: left;
-    padding: 0 30px;
-  }
+
+
 }
 // 聯繫----------------------------------------------------------------
 #Contact{
@@ -337,5 +357,12 @@ section{
   #Skill{
     height: 80vh;
     background: linear-gradient(rgb(225,220,205) 50%,white 50%);
+  }
+  #Portfolio{
+    .por{
+      margin-bottom: 50px;
+      padding: 30px;
+      margin: auto;
+    }
   }
 }

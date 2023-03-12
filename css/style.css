@@ -266,25 +266,45 @@ section {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
-#Portfolio .row {
+#Portfolio .por-bg {
   background: rgba(170, 140, 120, 0.1);
   padding: 20px;
+  margin: auto;
 }
-#Portfolio .ocean {
+#Portfolio .por-bg .ocean {
   text-align: left;
   margin: auto;
   margin-bottom: 10px;
 }
-#Portfolio .gif {
+#Portfolio .por-bg .por {
+  margin-bottom: 50px;
+  margin: auto;
+}
+#Portfolio .por-bg .gif {
   padding: 0;
 }
-#Portfolio .gif .swiper-slide img {
+#Portfolio .por-bg .gif .swiper-slide img {
   width: 100%;
   height: auto;
 }
-#Portfolio .text {
+#Portfolio .por-bg .text {
   text-align: left;
   padding: 0 30px;
+}
+#Portfolio .por-bg .cards {
+  margin: auto;
+}
+#Portfolio .por-bg .cards .card {
+  margin-bottom: 20px;
+  border: none;
+}
+#Portfolio .por-bg .cards .card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#Portfolio .por-bg .cards .card img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 #Contact {
@@ -317,5 +337,10 @@ section {
     height: 80vh;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgb(225, 220, 205)), color-stop(50%, white));
     background: linear-gradient(rgb(225, 220, 205) 50%, white 50%);
+  }
+  #Portfolio .por {
+    margin-bottom: 50px;
+    padding: 30px;
+    margin: auto;
   }
 }
