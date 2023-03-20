@@ -2,10 +2,29 @@
 body {
   height: 100vh;
   font-family: "Ubuntu", sans-serif;
+  position: relative;
 }
 
 section {
   padding: 60px 0;
+}
+
+.top-btn {
+  position: absolute;
+  z-index: 100;
+  bottom: 15vh;
+  right: 10px;
+  position: fixed;
+  opacity: 1;
+  text-decoration: none;
+  color: white;
+  background: rgb(100, 80, 65);
+  padding: 5px 10px;
+  border-radius: 30px;
+}
+.top-btn:hover {
+  color: white;
+  background: rgb(170, 140, 120);
 }
 
 .navbar {
@@ -359,6 +378,19 @@ section {
 #Contact {
   height: 10vh;
   background: rgb(170, 140, 120);
+  position: relative;
+}
+#Contact .text {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+#Contact .text p {
+  color: white;
+  margin: 0;
 }
 
 @media (min-width: 768px) {
