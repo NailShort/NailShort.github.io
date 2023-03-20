@@ -298,15 +298,31 @@ section{
       padding: 0 30px;
     }
     .cards{
+      padding-top: 50px;
       margin: auto;
+      position: relative;
+      &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 95%;
+        height: 3px;
+        background: rgb(170,140,120);
+      }
       .card{
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         border: none;
+        &:hover{
+          transform: scale(1.1);
+          box-shadow: 0 5px 5px rgb(170,140,120);
+        }
         img{
           object-fit: cover;
-          &:hover{
-            transform: scale(1.1);
-          }
+        }
+        .card-body{
+          background: rgb(170,140,120);
         }
       }
 
@@ -317,7 +333,7 @@ section{
 }
 // 聯繫----------------------------------------------------------------
 #Contact{
-  height: 50vh;
+  height: 10vh;
   background: lightgoldenrodyellow;
 }
 @media (min-width: 768px) {
@@ -361,7 +377,7 @@ section{
   #Portfolio{
     .por{
       margin-bottom: 50px;
-      padding: 30px;
+      padding: 0 30px 30px 30px;
       margin: auto;
     }
   }

@@ -292,23 +292,41 @@ section {
   padding: 0 30px;
 }
 #Portfolio .por-bg .cards {
+  padding-top: 50px;
   margin: auto;
+  position: relative;
+}
+#Portfolio .por-bg .cards::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 95%;
+  height: 3px;
+  background: rgb(170, 140, 120);
 }
 #Portfolio .por-bg .cards .card {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   border: none;
+}
+#Portfolio .por-bg .cards .card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0 5px 5px rgb(170, 140, 120);
+          box-shadow: 0 5px 5px rgb(170, 140, 120);
 }
 #Portfolio .por-bg .cards .card img {
   -o-object-fit: cover;
      object-fit: cover;
 }
-#Portfolio .por-bg .cards .card img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+#Portfolio .por-bg .cards .card .card-body {
+  background: rgb(170, 140, 120);
 }
 
 #Contact {
-  height: 50vh;
+  height: 10vh;
   background: lightgoldenrodyellow;
 }
 
@@ -340,7 +358,7 @@ section {
   }
   #Portfolio .por {
     margin-bottom: 50px;
-    padding: 30px;
+    padding: 0 30px 30px 30px;
     margin: auto;
   }
 }
