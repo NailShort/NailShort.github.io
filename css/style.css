@@ -323,6 +323,15 @@ section {
 }
 #Portfolio .por-bg .cards .card .card-body {
   background: rgb(170, 140, 120);
+  height: 170px;
+}
+#Portfolio .por-bg .cards .card .card-body h2 {
+  color: white;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 20px;
+}
+#Portfolio .por-bg .cards .card .card-body p {
+  color: rgb(225, 220, 205);
 }
 
 #Contact {
