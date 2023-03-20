@@ -105,8 +105,10 @@ section{
   background: rgb(225,220,205);
   .row{
     .img{
-      background: url(../images/face.jpg) no-repeat center center;
-      min-height: 500px;
+      background: url(../images/頭貼.jpg) no-repeat center center;
+      min-height: 500px; 
+      border-top-left-radius: 100px;
+      border-bottom-right-radius: 100px;
     }
     .text{
       padding: 30px 0px;
@@ -198,6 +200,7 @@ section{
       border-radius: 5px;
       background: white;
       box-shadow: 0 5px 5px rgba(170,140,120,0.5);
+      transition: 0.5s;
       &:hover{
         background: rgb(170,140,120);
         color: white;
@@ -295,7 +298,24 @@ section{
     }
     .text{
       text-align: left;
-      padding: 0 30px;
+      padding: 30px 30px;
+      button{
+        font-family: 'Noto Sans TC', sans-serif;
+        width: 100%;
+        text-align: left;
+        display: block;
+        background: rgb(225,220,205);
+        color: rgb(100,80,65);
+        border:none;
+        border-left: 5px solid rgb(100,80,65);
+        &:hover{
+          background: white;
+        }
+      }
+      .card{
+        margin-bottom: 30px;
+        font-size: 14px;
+      }
     }
     .cards{
       padding-top: 50px;
@@ -344,8 +364,10 @@ section{
 // 聯繫----------------------------------------------------------------
 #Contact{
   height: 10vh;
-  background: lightgoldenrodyellow;
+  background: rgb(170,140,120);
 }
+
+// RWD
 @media (min-width: 768px) {
   #About{
     .row{
@@ -390,5 +412,11 @@ section{
       padding: 0 30px 30px 30px;
       margin: auto;
     }
+    .por-bg{
+      .text{
+        padding: 0 30px;
+      }
+    }
+
   }
 }

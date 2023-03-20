@@ -21,6 +21,7 @@
 </head>
 
 <body>
+  <!-- navbar -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand logo" href="#">
@@ -53,6 +54,8 @@
 
     </div>
   </nav>
+  <!-- top -->
+  <a class="top" href="#">top</a>
   <!-- 首頁 -->
   <section id="Hellow" class="d-flex justify-content-center align-items-center">
     <div class="text">
@@ -74,9 +77,10 @@
     <div class="container p-0">
       <div class="row m-auto">
         <!-- 照片 -->
-        <div class="img col-lg-6 d-flex align-items-stretch justify-content-center justify-content-lg-start"></div>
+        <div class="img col-12 col-lg-5 d-flex align-items-stretch justify-content-center justify-content-lg-start">
+        </div>
         <!-- 文字區 -->
-        <div class="text row col-12 col-lg-6">
+        <div class="text row col-12 col-lg-7">
           <div class="col-12">
             <h1>About</h1>
             <p>
@@ -636,6 +640,7 @@
       </div>
     </div>
   </section>
+  <!-- 作品 ---------------------------------------------------------------->
   <section id="Portfolio">
     <div class="container">
       <h1>Portfolio</h1>
@@ -661,7 +666,77 @@
               <div class="swiper-button-prev"></div>
             </div>
           </div>
-          <div class="text col-12 col-lg-5">123</div>
+          <div class="text col-12 col-lg-5">
+            <p>
+              <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse01">
+                『Ocean』概念發想
+              </button>
+            </p>
+            <div class="collapse" id="collapse01">
+              <div class="card card-body">
+                自身有在飼養海水魚，發現台灣論壇有以下問題:<br>
+                <br>
+                1. 論壇介面陽春，UI 過於老舊<br>
+                2. 沒有結合魚種圖鑑，要再去其他網頁尋找資料<br>
+                3. 觀賞魚就是來觀賞的，照片太少缺少誘因<br>
+                <br>
+                此網站希望可以解決以上問題，將使用者在飼養海水魚會遇到的問題在此平台中都可解決。
+              </div>
+            </div>
+
+            <p>
+              <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse02">
+                使用者前台
+              </button>
+            </p>
+            <div class="collapse" id="collapse02">
+              <div class="card card-body">
+                前台功能:<br>
+                <br>
+                1. 會員註冊/登入<br>
+                2. 加入、修改最愛文章<br>
+                3. 查看會員資料及修改<br>
+                4. 傳送聯絡訊息
+                5. 頁面瀏覽
+                <br>
+                前台使用技術:<br>
+                <br>
+                1. 使用 Quasar 框架開發<br>
+                2. RWD 響應式網頁設計<br>
+                3. 以Pinia存取使用者資訊、API回傳資料<br>
+                4. Vue Router 頁面切換<br>
+                5. SCSS 預處理器<br>
+                6. axios 套件處理 AJAX<br>
+              </div>
+            </div>
+
+            <p>
+              <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse03">
+                管理者後台
+              </button>
+            </p>
+            <div class="collapse" id="collapse03">
+              <div class="card card-body">
+                後台功能:<br>
+                <br>
+                1. 新增、修改及管理文章、魚種等...<br>
+                2. 查看會員資料<br>
+                3. 查看聯絡訊息<br>
+                3. 查看管理員資料及修改<br>
+                <br>
+                前後端整合:<br>
+                <br>
+                1. 使用 Node.js + Express 框架<br>
+                2. RESTful API 進行請求<br>
+                3. CORS 處理跨域請求<br>
+                4. Passport 處理身份驗證<br>
+                5. bcrypt 處理密碼加鹽<br>
+                6. MongoDB + Mongoose 套件，建立 Schema<br>
+                7. Multer 套件處理上傳文件<br>
+                8. Cloudinary 進行媒體管理
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="row cards">
@@ -729,9 +804,9 @@
               </a>
               <div class="card-body">
                 <h2>RWD 響應式網頁</h2>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content.</p>
+                <p class="card-text">
+                  使用 Bootstrap 切版、jQuery、animate.css 動畫及 textillate.js 文字動態效果製作 。
+                </p>
               </div>
             </div>
           </div>
@@ -754,6 +829,7 @@
       </div>
     </div>
   </section>
+  <!-- 聯絡 ---------------------------------------------------------------->
   <section id="Contact"></section>
 
 
@@ -764,11 +840,20 @@
   <!-- gsap plugins，必須在 gsap 主程式之後 -->
   <script src="./gsap/ScrollTrigger.js"></script>
   <script src="./js/gsap.js"></script>
-  <!-- swiper -->
+  <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script>
     var swiper = new Swiper(".mySwiper", {
-      rewind: true,
+      spaceBetween: 50,
+      centeredSlides: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",

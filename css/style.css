@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   height: 100vh;
   font-family: "Ubuntu", sans-serif;
@@ -103,8 +104,10 @@ section {
   background: rgb(225, 220, 205);
 }
 #About .row .img {
-  background: url(../images/face.jpg) no-repeat center center;
+  background: url(../images/頭貼.jpg) no-repeat center center;
   min-height: 500px;
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
 }
 #About .row .text {
   padding: 30px 0px;
@@ -194,6 +197,8 @@ section {
   background: white;
   -webkit-box-shadow: 0 5px 5px rgba(170, 140, 120, 0.5);
           box-shadow: 0 5px 5px rgba(170, 140, 120, 0.5);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 #Skill .card .card-body:hover {
   background: rgb(170, 140, 120);
@@ -289,7 +294,24 @@ section {
 }
 #Portfolio .por-bg .text {
   text-align: left;
-  padding: 0 30px;
+  padding: 30px 30px;
+}
+#Portfolio .por-bg .text button {
+  font-family: "Noto Sans TC", sans-serif;
+  width: 100%;
+  text-align: left;
+  display: block;
+  background: rgb(225, 220, 205);
+  color: rgb(100, 80, 65);
+  border: none;
+  border-left: 5px solid rgb(100, 80, 65);
+}
+#Portfolio .por-bg .text button:hover {
+  background: white;
+}
+#Portfolio .por-bg .text .card {
+  margin-bottom: 30px;
+  font-size: 14px;
 }
 #Portfolio .por-bg .cards {
   padding-top: 50px;
@@ -336,7 +358,7 @@ section {
 
 #Contact {
   height: 10vh;
-  background: lightgoldenrodyellow;
+  background: rgb(170, 140, 120);
 }
 
 @media (min-width: 768px) {
@@ -369,5 +391,8 @@ section {
     margin-bottom: 50px;
     padding: 0 30px 30px 30px;
     margin: auto;
+  }
+  #Portfolio .por-bg .text {
+    padding: 0 30px;
   }
 }
