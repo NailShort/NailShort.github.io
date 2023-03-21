@@ -36,3 +36,18 @@
     .from('.top-btn', {
       opacity: 0
     })
+
+    window.addEventListener('mousemove', function (e) {
+      // console.log(e.pageX, e.pageY);
+      console.log(e.pageX - window.innerWidth / 2);
+      gsap.to('.my-img', {
+        boxShadow: `${-(e.pageX - window.innerWidth / 2) / 60}px ${-(e.pageY - window.innerHeight / 2) / 60}px 30px rgba(0,0,0,0.5)`,
+        rotationX: -(e.pageX - window.innerWidth / 2) / 100,
+        rotationY: -(e.pageY - window.innerHeight / 2) / 50,
+        rotationZ: -(e.pageX - window.innerWidth / 2) / 500,
+        skewX: -(e.pageX - window.innerWidth / 2) / 500,
+        skewY: -(e.pageY - window.innerHeight / 2) / 500,
+        // x: e.pageX - window.innerWidth / 2,
+        duration: 1,
+      })
+    })
